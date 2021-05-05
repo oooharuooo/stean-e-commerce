@@ -4,6 +4,8 @@ import { Navbar, Footer } from "./components";
 import { HomePage } from "./Pages";
 
 import { CssBaseline, Container, Grid } from "@material-ui/core/";
+// eslint-disable-next-line no-unused-vars
+import { sizing } from "@material-ui/system";
 
 // import {
 // 	Box,
@@ -23,7 +25,7 @@ function App() {
 			<Router>
 				<CssBaseline />
 				<Container maxWidth="lg">
-					<Grid container direction="column">
+					<Grid container style={{ height: "100vh" }}>
 						<Navbar />
 						<Switch>
 							<Route exact path="/">

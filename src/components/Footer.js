@@ -1,12 +1,14 @@
 import React from "react";
-import { Box, Typography, makeStyles } from "@material-ui/core";
+import { Box, Typography, Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	footer: {
 		backgroundColor: "#5f6160",
+		width: "100%",
 	},
-	white: {
+	footerText: {
 		color: "#fff",
+		textAlign: "center",
 	},
 });
 
@@ -14,9 +16,13 @@ const Footer = () => {
 	const classes = useStyles();
 
 	return (
-		<Box component="div" className={classes.footer}>
-			<Typography className={classes.white}>Copyright@ Dat V Thong</Typography>
-		</Box>
+		<Grid container item xs={12} justify="center" alignItems="flex-end">
+			<Box component="div" className={classes.footer}>
+				<Typography className={classes.footerText}>
+					Copyright@ Dat V Thong
+				</Typography>
+			</Box>
+		</Grid>
 	);
 };
 
