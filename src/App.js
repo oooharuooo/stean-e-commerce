@@ -4,18 +4,6 @@ import { Navbar, Footer } from "./components";
 import { HomePage } from "./Pages";
 
 import { CssBaseline, Container, Grid } from "@material-ui/core/";
-// eslint-disable-next-line no-unused-vars
-import { sizing } from "@material-ui/system";
-
-// import {
-// 	Box,
-// 	Typography,
-// 	Card,
-// 	CardMedia,
-// 	CardActionArea,
-// 	CardActions,
-// 	CardContent,
-// } from "@material-ui/core/";
 
 import "./App.css";
 

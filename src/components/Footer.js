@@ -18,9 +18,7 @@ const Footer = () => {
 	return (
 		<Grid container item xs={12} justify="center" alignItems="flex-end">
 			<Box component="div" className={classes.footer}>
-				<Typography className={classes.footerText}>
-					Copyright@ Dat V Thong
-				</Typography>
+				<Typography className={classes.footerText}>Copyright@ STEAN</Typography>
 			</Box>
 		</Grid>
 	);
