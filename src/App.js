@@ -3,25 +3,37 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components";
 import { HomePage } from "./Pages";
 
-import { CssBaseline, Container } from "@material-ui/core/";
+import { CssBaseline, Container, Grid } from "@material-ui/core/";
+
+// import {
+// 	Box,
+// 	Typography,
+// 	Card,
+// 	CardMedia,
+// 	CardActionArea,
+// 	CardActions,
+// 	CardContent,
+// } from "@material-ui/core/";
 
 import "./App.css";
 
 function App() {
 	return (
 		<React.Fragment>
-			<CssBaseline />
-			<Container maxWidth="lg">
-				<Router>
-					<Navbar />
-					<Switch>
-						<Route exact path="/">
-							<HomePage />
-						</Route>
-					</Switch>
-					<Footer />
-				</Router>
-			</Container>
+			<Router>
+				<CssBaseline />
+				<Container maxWidth="lg">
+					<Grid container direction="column">
+						<Navbar />
+						<Switch>
+							<Route exact path="/">
+								<HomePage />
+							</Route>
+						</Switch>
+						<Footer />
+					</Grid>
+				</Container>
+			</Router>
 		</React.Fragment>
 	);
 }
